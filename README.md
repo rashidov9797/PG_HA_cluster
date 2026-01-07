@@ -418,8 +418,3 @@ Then on repo server check:
 
 
 
-
-NOTE:
-- If DIFF/INCR fails, first ensure a FULL backup exists:
-    pgbackrest --stanza=pg-ha-cluster info
-
