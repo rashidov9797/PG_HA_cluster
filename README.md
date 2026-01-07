@@ -242,6 +242,29 @@ Start HAProxy:
     sudo systemctl enable --now haproxy
 
 
+## ✅ Proof: RW vs RO Routing (pgAdmin Test)
+
+This section proves that HAProxy correctly routes:
+- **Port `5000` → Leader (Read/Write)**
+- **Port `5001` → Replicas (Read-Only, load balanced)**
+
+
+
+SELECT
+  now() AS time,
+  inet_server_addr() AS server_ip,
+  inet_server_port() AS server_port,
+  pg_is_in_recovery() AS is_replica;
+
+
+<img width="1338" height="646" alt="image" src="https://github.com/user-attachments/assets/5728e511-1927-4ca0-b2bd-c9714ad04bae" />
+
+
+<img width="1238" height="561" alt="image" src="https://github.com/user-attachments/assets/3ff13207-304a-4ce7-a5c8-5ff5e17c9f95" />
+
+
+
+
 ---
 
 
@@ -262,6 +285,7 @@ Placeholders:
 ----------------------------------------------------------------------
 A) Repo Server (pgbackrest host) Setup
 ----------------------------------------------------------------------
+
 
 1) Install packages (on repo server)
 
@@ -339,6 +363,12 @@ This registers the cluster and validates connectivity.
 
     pgbackrest --stanza=pg-ha-cluster check
     pgbackrest --stanza=pg-ha-cluster info
+
+
+
+
+
+<img width="1193" height="649" alt="image" src="https://github.com/user-attachments/assets/f449b91c-d588-4622-b329-5efb41651e0c" />
 
 
 ----------------------------------------------------------------------
