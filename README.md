@@ -367,10 +367,6 @@ This registers the cluster and validates connectivity.
 
 
 
-
-<img width="1193" height="649" alt="image" src="https://github.com/user-attachments/assets/f449b91c-d588-4622-b329-5efb41651e0c" />
-
-
 ----------------------------------------------------------------------
 B) DB Nodes Setup (node1/node2/node3)
 ----------------------------------------------------------------------
@@ -413,6 +409,11 @@ Force a WAL switch:
 Then on repo server check:
 
     pgbackrest --stanza=pg-ha-cluster info
+
+
+
+
+<img width="1193" height="649" alt="image" src="https://github.com/user-attachments/assets/f449b91c-d588-4622-b329-5efb41651e0c" />
 
 
 
