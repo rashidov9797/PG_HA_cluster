@@ -1,7 +1,7 @@
 # 🐘 PostgreSQL 18 HA on Rocky Linux 8 (Patroni + ETCD + HAProxy + pgBackRest)
 
 
-<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/248db4ca-d9f5-4955-9235-3591a787abba" />
+<img width="966" height="843" alt="image" src="https://github.com/user-attachments/assets/52e47d13-c291-4002-88ad-c1a41aae9200" />
 
 
 This repository documents my portfolio project: a **production-style PostgreSQL 18 High Availability (HA)** architecture using **Patroni + ETCD** for leader election/failover, **HAProxy** for RW/RO traffic routing, and **pgBackRest** for backups and continuous WAL archiving.
