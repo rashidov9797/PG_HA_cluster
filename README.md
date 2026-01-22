@@ -16,7 +16,7 @@ All configuration examples in this repo are **sanitized** (IPs/passwords replace
 Command:
 patronictl -c /etc/patroni/patroni.yml list
 
-<img width="1239" height="280" alt="image" src="https://github.com/user-attachments/assets/0e584e75-4cdd-4240-a1f1-78246eab0955" />
+<img width="906" height="904" alt="image" src="https://github.com/user-attachments/assets/6b05dc77-2d60-4fb1-be4c-0f2f7eb3d4e4" />
 
 
 ---
