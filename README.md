@@ -17,7 +17,7 @@ Command:
 patronictl -c /etc/patroni/patroni.yml list
 
 
-<img width="677" height="164" alt="image" src="https://github.com/user-attachments/assets/a43973c4-0e2f-4f86-81e3-38db882dda82" />
+<img width="671" height="134" alt="image" src="https://github.com/user-attachments/assets/0f3f5066-2045-4a55-bc02-5216a65eb8ee" />
 
 
 
